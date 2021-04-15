@@ -1,6 +1,7 @@
 // Верстка кнопки
 .btn
   background: #FAC62D
+  color: #383736
   border-radius: 6px
   font-family: Roboto
   font-style: normal
@@ -22,7 +23,6 @@
     padding: 4px 12px
 
 // Верстка крестика для закрытия попапа
-  // ---- Сделал при помощи ::before для того чтоб крестик легко было сделать в бургер или в другую фигуру при необходимости в дальнейшем 
 .btn-close
   font-size: 14px
   padding: 7px
@@ -32,25 +32,11 @@
   outline: none
   border: none
   cursor: pointer
-  &__line,
-  &__line::before
-    content: ''
-    display: inline-block
-    width: 20px
-    height: 2px
-    background: #C4C4C4
-    transform: rotate(-45deg)
-    position: relative
-    vertical-align: middle
-  &__line::before
-    transform: rotate(90deg)
-    position: absolute
-    left: 0
-    top: 0
+  &__svg
+    fill: #C4C4C4
   &:hover
     background: #F5F4F2
-    .btn-close__line,
-    .btn-close__line::before
-      background: #383736
+    .btn-close__svg
+      fill: #383736
   &:active
     background: #E7E4DE

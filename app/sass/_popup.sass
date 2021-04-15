@@ -1,0 +1,115 @@
+.wrapper
+  display: flex
+  -ms-display: flex
+  -moz-display: flex
+  -webkit-display: flex
+  justify-content: space-around
+  -ms-justify-content: space-around
+  -moz-justify-content: space-around
+  -webkit-justify-content: space-around
+  +bp(md)
+    flex-wrap: wrap
+  +bp(sm)
+    justify-content: flex-start
+    -ms-justify-content: flex-start
+    -moz-justify-content: flex-start
+    -webkit-justify-content: flex-start
+.popup-plan
+  font-family: Roboto
+  font-weight: 400
+  background: #E5E5E5
+  background-size: cover
+  min-height: 100vh
+  position: relative
+  padding: 40px 120px
+  +bp(lg)
+    padding: 20px
+  &__content
+    background: #fff
+    padding: 24px
+    &--img
+      align-self: center
+      -ms-align-self: center
+      margin: 0 70px
+    &--info
+      max-width: 450px
+  &--buy
+.house-info
+  list-style-type: none
+  flex-wrap: wrap
+  padding: 0
+  &__item
+    min-width: 150px
+    margin: 6px 0
+    +bp(xs)
+      min-width: 100px
+    span
+      display: block
+    &--title
+      color: #989691
+      font-size: 12px
+    &--subtitle
+      color: #383736
+      font-size: 14px
+      font-weight: 500
+  &__link
+    padding: 8px 16px
+    text-decoration: none
+    font-size: 12px
+    line-height: 16px
+    color: #EB4B51
+    background: #FAF0F0
+    border-radius: 22px
+    font-weight: 500
+    display: inline-block
+    +bp(xs)
+      font-size: 10px
+    &:hover
+      opacity: .7
+    &:active
+      opacity: .4
+    &--done
+      background: #F2FAF0
+      color: #64B851
+      margin-right: 16px
+      margin-bottom: 8px
+.house-buy
+  min-width: 300px
+  padding: 0 30px
+  border-left: 1px solid #F0EEEB
+  flex-direction: column
+  justify-content: space-between
+  justify-content: space-between
+  -ms-justify-content: space-between
+  -moz-justify-content: space-between
+  -webkit-justify-content: space-between
+  +bp(md)
+    width: 100%
+    padding: 0
+    padding-top: 24px
+    margin-top: 24px
+    border-left: none
+    border-top: 1px solid #F0EEEB
+  +bp(xs)
+    min-width: 0
+  div
+    max-width: 240px
+  &__main-text
+    color: #989691
+    font-size: 14px
+    line-height: 20px
+    margin: 1px
+    span
+      color: #2794DB
+      font-weight: 500
+    &--comparative
+      span
+        color: #EB4B51
+  &__price
+    color: #383736
+    font-size: 24px
+    font-weight: 700
+    line-height: 36px
+    margin: 2px 0 12px 0
+  &__btn
+    margin-top: 25px
